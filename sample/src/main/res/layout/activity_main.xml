@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="es.atrapandocucarachas.fonttextview.MainActivity">
 
-    <es.atrapandocucarachas.library.FontTextView
+    <es.atrapandocucarachas.fonttextview.FontTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
