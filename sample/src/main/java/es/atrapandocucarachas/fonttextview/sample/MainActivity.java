@@ -1,4 +1,4 @@
-package es.atrapandocucarachas.fonttextview;
+package es.atrapandocucarachas.fonttextview.sample;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

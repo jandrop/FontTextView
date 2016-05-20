@@ -5,8 +5,6 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import es.atrapandocucarachas.library.R;
-
 /**
  * @author Alejandro Platas Mallo
  * @version X.XX
