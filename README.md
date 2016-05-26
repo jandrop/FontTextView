@@ -1,3 +1,5 @@
+![alt text](https://raw.githubusercontent.com/jandrop/FontTextView/master/art/sample.png)
+
 FontTextView Sample
 ===================================
 
