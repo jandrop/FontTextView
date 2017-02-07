@@ -25,7 +25,7 @@ Add the library dependency to your build.gradle file.
 ```groovy
 dependencies {
     ...
-    compile 'com.github.jandrop:jandrop:FontTextView:1.0'
+    compile 'com.github.jandrop:jandrop:FontTextView:1.0.1'
 }
 ```
 ### 3.- Example of use:
@@ -38,7 +38,7 @@ then you can add the textview into your xml as:
         android:layout_height="wrap_content"
         android:text="Hello World!"
         android:textSize="48sp"
-        app:customFont="capture.ttf"
+        app:font="capture.ttf"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 ```
