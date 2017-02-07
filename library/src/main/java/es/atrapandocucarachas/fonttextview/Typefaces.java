@@ -13,23 +13,25 @@ import java.util.Hashtable;
  */
 
 public class Typefaces {
-    private static final String TAG = Typefaces.class.getSimpleName();
-    private static final Hashtable<String, Typeface> cache = new Hashtable<>();
+	private static final String TAG = Typefaces.class.getSimpleName();
+	private static final Hashtable<String, Typeface> cache = new Hashtable<>();
 
-    public static Typeface get(Context c, String assetPath) {
-        synchronized (cache) {
-            if (!cache.containsKey(assetPath)) {
-                try {
-                    Typeface t = Typeface.createFromAsset(c.getAssets(), assetPath);
-                    cache.put(assetPath, t);
-                    Log.i(TAG, "Loaded'" + assetPath);
-                } catch (Exception e) {
-                    Log.e(TAG, "Could not get typeface'" + assetPath
-                            + "' because " + e.getMessage());
-                    return null;
-                }
-            }
-        }
-        return cache.get(assetPath);
-    }
+	public static Typeface get(Context c, String assetPath) {
+		synchronized (cache) {
+			if (!cache.containsKey(assetPath)) {
+				try {
+					Typeface t = Typeface.createFromAsset(c.getAssets(), assetPath);
+					cache.put(assetPath, t);
+					if (BuildConfig.DEBUG) {
+						Log.i(TAG, "Loaded'" + assetPath);
+					}
+				} catch (Exception e) {
+					Log.e(TAG, "Could not get typeface'" + assetPath
+							+ "' because " + e.getMessage());
+					return null;
+				}
+			}
+		}
+		return cache.get(assetPath);
+	}
 }

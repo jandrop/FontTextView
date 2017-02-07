@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:text="Hello World!"
         android:textSize="48sp"
-        app:customFont="capture.ttf"
+        app:font="capture.ttf"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
